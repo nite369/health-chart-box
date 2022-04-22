@@ -1,0 +1,45 @@
+1 C!DOCTYPE tital>
+2 chtab
+3 chead
+4 clink rel="stylesheet" type:
+5 «script src="ca
+hrefa"https://ajax.googleapis.com/ajax,
+bs/jguery/3.2.1/iquery.min.iss/as"></script
+6 </head
+7 body>
+8 chi›Flask Chatterbot Example</hi>
+9 cdivs
+18 <div id="chatbox")
+11 <p class="botText"><span>Hi! I'm Chatterbot.</s
+12 </div
+13 caiv id="userInput">
+14 input id="textInput" type="text" nan
+15 «input id="button Input" types"submit" value="Send"
+16 </divs
+17 «script
+18 function getBotResponse)f
+19 var ravText = $("#textInput*). valO;
+20 var userHtal = (<p class="userText"›<span»'
+•*</span></p›
+21 $ ("#textInput"). val (" );
+22 $ ("#}chatbox") .append (userHtai);
+23 document.getElementById(* user Input *).scrollIntoViev({block: 'start', behavior: "smooth 3):
+24 $.get ("/get", { msg: raNText }).done (function (data) {
+25 var botHtal = "‹p class="botText*›<span>
++ data + "</span></p>";
+26 $("#chatbox"). append (botHta1) ;
+27 document.getElementById('userInput').scrollIntoVien({block:"start',behavior:"saooth'});
+28 });
+29 7
+30 $("'H#textInput").keypress (function (e)f
+31 if(e.which == 13) f
+32 getBotResponse0;
+33 }
+34 }):
+35 $ ("#buttonInput").click (function O f
+36 getBotResponse 0 ;
+(373)
+38 </script
+39 </div>
+48 < body>
+41 </htal
